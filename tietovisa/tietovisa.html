@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+   
+<title>Kingdom Hearts 4ever</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col header" col-md-12 style="text-align: center;">
+              <h1>Kingdom Hearts <br>
+                    4ever</h1>
+            </div>
+            
+<!-- Navigointi alkaa-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Kingdom Hearts</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Etusivu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tietovisa.html">Tietovisa</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hahmot
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../sora/sora.html">Sora</a></li>
+              <li><a class="dropdown-item" href="../riku/riku.html">Riku</a></li>
+              <li><a class="dropdown-item" href="../kairi/kairi.html">Kairi</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<!-- Navigointi päättyy-->
+
+        </div>
+        <div class="row">
+            <div class="col row1" col-md-12>
+
+              <article> 
+                <div id="yleisvisaHeading">
+                  </div>
+                      <div id="quiz">
+                        <div class="row">
+                            <h1 id="result"></h1>
+                          </div>
+                          <div class="col-md-6 col-lg" id="progressinfo">
+                            <p class="hidden" id="quesright">Kysymyksiä oikein <span id="correctAnswers"></span>/5</p>
+                            <progress class="hidden" id="progressbar" value="" max="5"></progress>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <legend id="bigQuestion"></legend>
+                            <div class="col">
+                                <div id="question1"  class="visible">
+                                  <legend>Mikä on päähenkilön nimi Kingdom Hearts -peleissä?</legend><br>
+                                    <input type="radio" name="radioAnswer" id="right"> Sora<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Riku<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Kairi<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Roxas<br>
+                                    <button class="checkbutton checkbutton1" onclick="question1()">Tarkista</button><br>
+                                </div>
+                                <div id="question2" class="hidden">
+                                    <legend>Miksi kutsutaan päähenkilön asetta?</legend><br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Kynämiekka<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Terotinmiekka<br>
+                                    <input type="radio" name="radioAnswer" id="right2"> Avainmiekka<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Kumimiekka<br>
+                                    <button class="checkbutton checkbutton2" onclick="question2()">Tarkista</button><br>
+                                </div>
+                                <div id="question3" class="hidden">
+                                    <legend>Mikä on ensimmäisen Kingdom Hearts -pelin päävihollisen nimi?</legend><br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Pahatar<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Mikki Hiiri<br>
+                                    <input type="radio" name="radioAnswer" id="right3"> Ansem<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Peter Pan<br>
+                                    <button class="checkbutton checkbutton3" onclick="question3()">Tarkista</button><br>
+                                </div>
+                                <div id="question4" class="hidden">
+                                    <legend>Mikä on pelin ensimmäinen maa?</legend><br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Traverse Town<br>
+                                    <input type="radio" name="radioAnswer" id="right4"> Destiny Islands<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Deep Jungle<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Neverland<br>
+                                    <button class="checkbutton checkbutton4" onclick="question4()">Tarkista</button><br>
+                                </div>
+                                <div id="question5" class="hidden">
+                                    <legend>Keiden kanssa Sora seikkailee?</legend><br>
+                                    <input type="radio" name="radioAnswer" id="right5"> Aku Ankka ja Hessu Hopo<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Tupu, Hupu ja Lupu<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Mikki Hiiri ja Iines Ankka<br>
+                                    <input type="radio" name="radioAnswer" id="wrong"> Roope-Setä ja Pluto<br>
+                                    <button class="checkbutton checkbutton5" onclick="question5()">Tarkista</button><br>
+                                </div>
+                                <!--Bootstrap kortit-->
+                                <div class="row" id="cards">
+                                  <div class="col">
+            
+                                      <div class="card hidden" id="kysymys1" style="width: 10rem;">
+                                      </div>
+                                      <div class="card hidden" id="kysymys2" style="width: 10rem;">
+                                      </div>
+                                      <div class="card hidden" id="kysymys3" style="width: 10rem;">
+                                      </div>
+                                      <div class="card hidden" id="kysymys4" style="width: 10rem;">
+                                        </div>
+                                      <div class="card hidden" id="kysymys5" style="width: 10rem;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col">
+                                    <button class="hidden"  id="uudestaan" onclick="uudestaan()">Pelaa uudestaan?</button>
+                                    <br>
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                  </div>
+
+        
+        <div class="row">
+            <div class="col header" col-md-12 style="text-align: center;">
+                    Sivusto: Mikael Rekinen 2022 <br>
+                    Peli, tiedot ja kuvat: Square-Enix & Disney
+            </div>
+        </div>
+        
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+
+  </body>
+</html>

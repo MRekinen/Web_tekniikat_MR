@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-image: url("pictures/kh_header.png");
+    color: white;
+    background-size: cover;
+}
+
+.col {
+    border: 3px solid white;
+    border-radius: 2px;
+    background-color: black;
+    padding: 10px;
+    margin: 1px; 
+}
+
+.row1 {
+    background-image: url("pictures/index_kh1.png");
+    background-size: cover;
+}
+
+.row2 {
+    background-image: url("pictures/index_kh2.png");
+    background-size: cover;  
+}
+
+.row3 {
+    background-image: url("pictures/index_kh3.png");
+    background-size: cover;  
+}
+
+picture {
+    opacity: 0.5;
+}
+
+.navbar {
+    border: 3px solid white;
+    border-radius: 2px;
+    background-color: black;
+    padding: 10px;
+    margin: 1px;   
+}
