@@ -24,29 +24,29 @@
 <!-- Navigointi alkaa-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Kingdom Hearts</a>
+      <a class="navbar-brand" href="index.html">Kingdom Hearts</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+        <dl class="navbar-nav me-auto mb-2 mb-lg-0">
+          <dt class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Etusivu</a>
-          </li>
-          <li class="nav-item">
+          </dt>
+          <dt class="nav-item">
             <a class="nav-link" href="tietovisa/tietovisa.html">Tietovisa</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          </dt>
+          <dt class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Hahmot
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="sora/sora.html">Sora</a></li>
-              <li><a class="dropdown-item" href="riku/riku.html">Riku</a></li>
-              <li><a class="dropdown-item" href="kairi/kairi.html">Kairi</a></li>
-            </ul>
-          </li>
-        </ul>
+            <dl class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <dt><a class="dropdown-item" href="sora/sora.html">Sora</a></dt>
+              <dt><a class="dropdown-item" href="riku/riku.html">Riku</a></dt>
+              <dt><a class="dropdown-item" href="kairi/kairi.html">Kairi</a></dt>
+            </dl>
+          </dt>
+        </dl>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
@@ -62,8 +62,19 @@
                Tämä toiminta RPG-peli sai alkunsa Squaren ja Disney Interactive Studiosin yhteistyönä ja mukana oli Disneyn ääninäytteiljöitä. Toiminta- ja RPG-elementtejä sekä Disneyn ja Final Fantasyn hahmoja yhdistelevä peli sai positiivisen vastaanoton.</div>
             <div class="col row2" col-md-4>Peli pyörii 14-vuotiaan Sora-pojan ympärillä ja kertoo hänen seikkailuistaan Soran kotimaailman tuhouduttua pahojen Heartless-olentojen toimesta. Tarina seuraa pojan yritystä palauttaa maailmansa ja löytää jälleen ystävänsä.<br><br>
                Matkan aikana hän tapaa monia Disney elokuvista ja Final Fantasy peleistä tuttuja hahmoja. Tunnuskappale on Utada Hikarun esittämä "Simple and Clean".</div>
-            <div class="col row3" col-md-4>Kronologisesti Kingdom Hearts jatkaa Kingdom Hearts Birth by Sleepin tarinaa ja edeltää Kingdom Hearts: Chain of Memoriesia sekä osittain päällekkäin menevää Kingdom Hearts 358/2 Daysia.</div>
-        </div>
+            <div class="col row3" col-md-4>Kronologisesti Kingdom Hearts jatkaa Kingdom Hearts Birth by Sleepin tarinaa ja edeltää Kingdom Hearts: Chain of Memoriesia sekä osittain päällekkäin menevää Kingdom Hearts 358/2 Daysia.<br>
+            <br>
+              <label for="course">Nimesi:</label><br>
+    <input type="text" id="course"><br>
+    <label for="members">Suosikkihahmo:</label><br>
+    <input type="text" id="members"><br><br>
+    <button class="nappi">Lisää listaan</button>
+    <button id="show">Näytä</button>
+              <ul class="lista"></ul>
+  </div>
+              
+       
+          </div>
 
         <div class="row">
             <div class="col header" col-md-12 style="text-align: center;">
